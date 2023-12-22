@@ -21,7 +21,9 @@ const idioma = (e) => {
 };
 
 const comprobarIdioma = () => {
-  if (window.location.href.includes("index.html")) {
+
+  const idiomaNavegador = navigator.language || navigator.userLanguage;
+  if (idiomaNavegador.startsWith("es")) {
     $("#es").addClass("idioma-selected");
     $("#en").removeClass("idioma-selected");
   } else {
