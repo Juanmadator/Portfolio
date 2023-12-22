@@ -66,6 +66,12 @@ header {
   justify-content: space-between;
 }
 
+@media(max-width:450px){
+header{
+  width:80%;
+  margin:0 auto;
+}
+
 a{
   text-decoration: none;
 }
