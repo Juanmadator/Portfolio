@@ -3,14 +3,15 @@ $(() => {
   $("#en").on("click", idioma);
   comprobarIdioma(); // Llamada inicial para comprobar el idioma al cargar la página
   cambiarFondo()
+  comprobarIdioma()
 });
 
 const idioma = (e) => {
   let imagen = e.currentTarget;
 
-  comprobarIdioma(); // Comprobar el idioma antes de iniciar el tiempo de espera
 
   setTimeout(() => {
+    comprobarIdioma()
     if (imagen.id == "es") {
       window.location.href = "index.html";
     } else {
