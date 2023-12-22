@@ -21,7 +21,7 @@ const idioma = (e) => {
 };
 
 const comprobarIdioma = () => {
-  if ($("title")=="Juanmadator-ES") {
+  if ($("html").attr("lang")=="es") {
     $("#es").addClass("idioma-selected");
     $("#en").removeClass("idioma-selected");
   } else {
