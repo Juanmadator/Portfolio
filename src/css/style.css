@@ -123,6 +123,11 @@ a{
   }
 }
 
+.titulo{
+  padding: 30px 0;
+  }
+  
+
 .about-me-btn {
   font-family: "Poppins";
   padding: 10px 14px;
@@ -254,17 +259,15 @@ justify-content: center;
   transition: 0.3s all ease-in-out;
 }
 
+
 @media(max-width:880px){
 .conocimientos{
   flex-direction: column;
-  top: 80%;
+  top: 85%;
 }
-
-
 .envolvente-proyectos{
   margin-top: 250px;
 }
-
 
 .sobre-mi{
   padding-bottom: 400px;
