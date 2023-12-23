@@ -124,7 +124,9 @@ a{
 }
 
 .titulo{
-  padding: 30px 0;
+  font-size: 50px;
+  text-align: center;
+  padding: 40px 0;
   }
   
 
@@ -152,7 +154,6 @@ a{
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 50px;
-  border: 1px solid lightgrey;
   margin-top: 200px;
 }
 
@@ -162,6 +163,11 @@ a{
   gap: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.proyectos a{
+  font-weight: 600;
+  color: var(--negro);
 }
 
 @media (max-width: 550px) {
@@ -322,6 +328,14 @@ justify-content: center;
 }
 
 
-.proyectos a{
+.proyect{
+  transition: 0.4s all ease;
+}
+
+.proyect:hover{
+  transform: scale(1.20);
+}
+
+.proyect a{
   color: var(--negro);
 }
