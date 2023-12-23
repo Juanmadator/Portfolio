@@ -1,0 +1,17 @@
+.iconos-nosotros{
+    //cuando llegue al tamanio de tablet 3 columnas con gap de 2rem
+    @include tablet{
+        @include grid(3,2rem)
+        
+    }
+}
+
+.icono{
+    text-align: center;
+   img{
+    height: 10rem;
+   }
+   h3{
+    text-transform: uppercase;
+   }
+}
