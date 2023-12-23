@@ -64,6 +64,12 @@ const animacionLinks = () => {
       }
       setTimeout(function () {
         window.location.href = targetPage;
+        if(document.body.classList.contains("page-transition-morado")){
+          document.body.removeClass("page-transition-morado")
+        }
+        if(document.body.classList.contains("page-transition-azulito")){
+          document.body.removeClass("page-transition-azulito")
+        }
       }, 500);
     });
   });
