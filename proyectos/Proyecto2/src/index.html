@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+  <div id="topbar" class="d-flex align-items-center p-2">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center ">
+          <a href="index.html" class="p-1">contact@example.com</a>
+        </i>
+
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span class="p-1">+1 5589 55488 55</span></i>
+      </div>
+
+      <div class="social-links d-none d-md-flex align-items-center gap-2">
+
+        <a href="index.html" class="twitter">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="index.html" class="facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="index.html" class="instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="index.html" class="linkedin">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div
+    class="container-fluid bg-white sticky-top   d-flex justify-content-lg-around  justify-content-between align-items-center">
+
+    <div class="logo ms-1 ms-sm-5">
+      <h1 class=" p-0 m-0"><a href="index.html" class="p-2">ETERNA</a></h1>
+    </div>
+
+    <nav class="navbar  navbar-expand-lg p-3 p-lg-0">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas bg-transparent offcanvas-end w-100  p-3" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header ">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-white mt-1">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item active">
+                <a class="nav-link mx-2" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  mx-2" aria-current="page" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" aria-current="page" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  mx-2" aria-current="page" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" aria-current="page" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  mx-2" aria-current="page" href="#">Blog</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        
+      </div>
+    </nav>
+  </div>
+
+  <div class="carrusel">
+    <div id="carouselExampleDark" class="carousel  carousel-dark slide carousel-fade">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item uno active" data-bs-interval="2000">
+          <div class="fondo-auxiliar"></div>
+          <div class="contenido-carrusel mt-4">
+            <h2 class="pb-4">Welcome to <span>Eterna</span></h2>
+            <p class="parrafo-carrusel">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat
+              sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
+              accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <button class="btn-carrusel-read">Read More</button>
+          </div>
+          <!-- <img src="img/slide/slide-1.jpg" class="d-block w-100" alt="..."> -->
+        </div>
+        <div class="carousel-item dos" data-bs-interval="2000">
+          <div class="fondo-auxiliar"></div>
+          <div class="contenido-carrusel  mt-4">
+            <h2 class="pb-4">Lorem <span>Ipsum Dolor</span></h2>
+            <p class="parrafo-carrusel">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat
+              sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
+              accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <button class="btn-carrusel-read">Read More</button>
+          </div>
+          <!-- <img src="img/slide/slide-2.jpg" class="d-block w-100" alt="..."> -->
+
+        </div>
+        <div class="carousel-item tres" data-bs-interval="2000">
+          <div class="fondo-auxiliar"></div>
+          <div class="contenido-carrusel  mt-4">
+            <h2 class="pb-4">Sequi ea <span>Dime Lara</span></h2>
+            <p class="parrafo-carrusel">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat
+              sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
+              accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <button class="btn-carrusel-read">Read More</button>
+          </div>
+          <!-- <img src="img/slide/slide-3.jpg" class="d-block w-100" alt="..."> -->
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon flecha" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon flecha" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <!--COMIENZO 3 TARJETAS-->
+
+  
+
+
+  <div class="container d-flex tarjetas">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <i class="bi bi-card-checklist"></i>
+            <h5 class="card-title">Lorem Ipsum</h5>
+            <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+              occaecati cupiditate non provident</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <i class="bi bi-bar-chart"></i>
+            <h5 class="card-title">Dolor Sitema</h5>
+            <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+              occaecati cupiditate non provident</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <i class="bi bi-binoculars"></i>
+            <h5 class="card-title">Sed ut perspiciatis</h5>
+            <p class="card-text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+              occaecati cupiditate non provident</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--FIN 3 TARJETAS-->
+
+  <section class="informacion mt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="./img/about.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-6 pt-lg-0 content pt-2 mt-sm-3 mt-lg-0">
+          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</i>
+
+          <nav class="informacion-menu">
+            <ul class="p-0">
+              <li class="pt-3"><i class="bi bi-check-circle"></i>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li class="pt-3"><i class="bi bi-check-circle"></i>
+                Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li class="pt-3"><i class="bi bi-check-circle"></i>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p class="pt-lg-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FIN DE INFORMACION-->
+
+  <div class="container cartas-info ">
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 d-flex align-items-center mt-4">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <i class="bi bi-dribbble"></i>
+            <h5 class="card-title mt-5 ">Lorem Ipsum</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <!--2-->
+      <div class="col-lg-4 col-md-6 d-flex align-items-center mt-4 ">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <i class="bi bi-file-earmark-binary"></i>
+            <h5 class="card-title mt-5">Lorem Ipsum</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+          </div>
+        </div>
+      </div>
+      <!--3-->
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-center mt-4">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <i class="bi bi-speedometer2"></i>
+            <h5 class="card-title mt-5">Lorem Ipsum</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-center mt-4">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <i class="bi bi-globe-americas"></i>
+            <h5 class="card-title mt-5">Lorem Ipsum</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-center mt-4">
+        <div class="card " style="width: 100%;">
+          <div class="card-body">
+            <i class="bi bi-display"></i>
+            <h5 class="card-title mt-5">Lorem Ipsum</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-center mt-4">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <i class="bi bi-bank"></i>
+            <h5 class="card-title mt-5">Lorem Ipsum</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container clientes text-center pb-3">
+    <div class="title m-auto">
+      <h1 class="mb-3">Clients</h1>
+      <hr class="m-auto linea">
+    </div>
+    <p class="mt-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+      sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+      in iste officiis commodi quidem hic quas.</p>
+
+    <div class="container">
+      <div class="swiper clients-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/clients/client-1.png" alt="" width="100%" class="fotoSwiper"></div>
+          <div class="swiper-slide"><img src="./img/clients/client-2.png" alt="" width="100%" class="fotoSwiper"></div>
+          <div class="swiper-slide"><img src="./img/clients/client-3.png" alt="" width="100%" class="fotoSwiper"></div>
+          <div class="swiper-slide"><img src="./img/clients/client-4.png" alt="" width="100%" class="fotoSwiper"></div>
+          <div class="swiper-slide"><img src="./img/clients/client-5.png" alt="" width="100%" class="fotoSwiper"></div>
+          <div class="swiper-slide"><img src="./img/clients/client-6.png" alt="" width="100%" class="fotoSwiper"></div>
+          <div class="swiper-slide"><img src="./img/clients/client-7.png" alt="" width="100%" class="fotoSwiper"></div>
+          <div class="swiper-slide"><img src="./img/clients/client-8.png" alt="" width="100%" class="fotoSwiper"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="container questions text-center pt-5 pb-5">
+    <div class="title m-auto">
+      <h1 class="mb-3"> Frequently Asked Questions</h1>
+      <hr class="m-auto linea">
+    </div>
+    <p class="mt-3 fw-normal">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+      sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+      in iste officiis commodi quidem hic quas.</p>
+    <div class="preguntas">
+      <div class="accordion mx-lg-5 px-0" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <i class="bi bi-question-circle pe-2"></i> Non consectetur a erat nam at lectus urna duis?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body text-start">
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+              Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item ">
+          <h2 class="accordion-header" id="collapseTwo">
+            <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="true" aria-controls="collapseTwo">
+              <i class="bi bi-question-circle pe-2"></i> Feugiat scelerisque varius morbi enim nunc?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="collapseTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body text-start">
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+              Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="collapseThree">
+            <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+              aria-expanded="true" aria-controls="collapseThree">
+              <i class="bi bi-question-circle pe-2"></i> Dolor sit amet consectetur adipiscing elit?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="collapseThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body text-start">
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+              Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="collapseFour">
+            <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+              aria-expanded="true" aria-controls="collapseFour">
+              <i class="bi bi-question-circle pe-2"></i> Tempus quam pellentesque nec nam aliquam sem et tortor
+              consequat?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="collapseFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body text-start">
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+              Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="collapseFive">
+            <button class="accordion-button p-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+              aria-expanded="true" aria-controls="collapseFive">
+              <i class="bi bi-question-circle pe-2"></i> Tortor vitae purus faucibus ornare. Varius vel pharetra vel
+              turpis nunc eget lorem dolor?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body text-start">
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+              Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="container-fluid mx-0 px-0 pt-5">
+    <div class="container-fluid newsletter justify-content-center w-100 footer-1 ">
+     <div class="container w-100">
+      <div class=" row py-5 d-flex align-items-center">
+       <div class="col-lg-6 col-12">
+        <h1 class="fs-4">Our Newsletter</h1>
+        <p class="texto pb-4">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+       </div>
+
+       <div class="  col-lg-6 col-12">
+      <div class="d-flex botones">
+        <input type="text" class=" newsletter-input ">
+        <input type="submit" value="Suscribe" class=" border-0 newsletter-btn ">
+      </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="links container-fluid pb-5">
+     <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 pt-5">
+          <h5 class="fs-6 fw-bold">USEFUL LINKS</h5>
+          <ul class="px-0">
+            <li class="pt-3">
+             <i class="bi bi-caret-right"></i> Home</li>
+            <li class="pt-3">
+             <i class="bi bi-caret-right"></i> About us</li>
+            <li class="pt-3">
+             <i class="bi bi-caret-right"></i> Services</li>
+            <li class="pt-3"> 
+             <i class="bi bi-caret-right"></i> Terms of service</li>
+            <li class="pt-3">
+             <i class="bi bi-caret-right"></i> Privacy policy</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-5">
+          <h5 class="fs-6 fw-bold">OUR SERVICES</h5>
+          <ul class="px-0">
+            <li class="pt-3">
+             <i class="bi bi-caret-right"></i> 
+             Web Design</li>
+            <li class="pt-3">
+             <i class="bi bi-caret-right"></i> 
+             Web Development</li>
+            <li class="pt-3">
+             <i class="bi bi-caret-right"></i> 
+             Product Management</li>
+            <li class="pt-3"> 
+             <i class="bi bi-caret-right"></i>
+             Marketing</li>
+            <li class="pt-3">
+             <i class="bi bi-caret-right"></i>
+             Graphic Design</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-5">
+          <h5 class="fs-6 pb-3 fw-bold">CONTACT US</h5> 
+          <ul class="text-start px-0">
+            <li>A108 Adam Street</li>
+          <li>New York, NY 535022</li>
+          <li>United States</li></ul>
+
+          <div class="info-contacto pt-3">
+            <p class="pb-0 mb-0"><b>Phone: </b>+1 5589 55488 55</p>
+            <p class="pt-0 mt-0"><b>Email: </b>info@example.com</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-5">
+          <h5 class="fs-6 pb-2 fw-bold">About Eterna</h5>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="redes-sociales pb-3">
+              <i class="bi bi-twitter-x  "></i>
+              <i class="bi bi-facebook  "></i>
+              <i class="bi bi-instagram  "></i>
+              <i class="bi bi-skype  "></i>
+              <i class="bi bi-linkedin  "></i>
+          </div>
+        </div>
+
+      </div>
+     </div>
+
+    </div>
+    <div class="container-fluid copyright text-center py-4">
+      <div class="container">
+        <p>&#169 Copyright <b>Eterna</b>. All Rights Reserved</p>
+        <p>Designed by <span class="footer-made">BootstrapMade</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+        new Swiper('.clients-slider', {
+          speed: 400,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+          },
+          slidesPerView: 'auto',
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 40
+            },
+            480: {
+              slidesPerView: 3,
+              spaceBetween: 60
+            },
+            640: {
+              slidesPerView: 4,
+              spaceBetween: 80
+            },
+            992: {
+              slidesPerView: 6,
+              spaceBetween: 120
+            }
+          }
+        });
+        </script>
+
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
